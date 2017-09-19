@@ -6,6 +6,9 @@ You can add all heroes of the hots to the mongodb with automatic portraits, role
 
 [Hero list](http://eu.battle.net/heroes/es/heroes/#/)
 
+##
+![alt text](https://raw.githubusercontent.com/Gaizka-gzgr/HOTS-MongoDB-Library/master/preview.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
