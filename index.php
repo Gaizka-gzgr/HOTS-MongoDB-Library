@@ -12,15 +12,11 @@ require_once __DIR__ . "/class/hots.class.php";
 //New Hots Class
 $hots = new Hots();
 
-//Check $_POST is not empty from form.
-var_dump($_POST);
-
-
 //If submit is set.
 if(isset($_POST['submit']))
 {
 	//Now we execute function with this two vars from post, too we set $msg for return message.
-	$msg = $hots->addHero($_POST['hname'], $_POST['htype']);
+	$hots->addHero($_POST['hname'], $_POST['htype'], $_POST['spells']);
 }
 
 ?>
@@ -55,10 +51,11 @@ if(isset($_POST['submit']))
 			<option>Specialist</option>
 			<option>Warrior</option>
 		</select>
+		<input type="text" name="spells" placeholder="Frostbolt,Blizzard,Cone of Cold,Ring of frost,Summon water elemental">
 		<br>
 		<?php
 			//echo msg.
-			echo $msg;
+			if(!empty($msg)){echo $msg;}
 		 ?>
 		<input type="submit" name="submit" value="Add">
 	</form>
