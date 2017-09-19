@@ -2,7 +2,7 @@
 
 /*********************************************************
  * Name:		HOTS MongoDB Library
- * Version:		v0.1-alpha
+ * Version:		v0.2-alpha
  * Author:		Gaizka González Graña (gaizka.gzgr@gmail.com)
  * License:		MIT (https://github.com/Gaizka-gzgr/MOTS-MongoDB-Library-/blob/master/LICENSE)
  * Copyright 2017 - i++
@@ -15,6 +15,7 @@ class Hots
 	private $client;
 	private $collection;
 	private $url = "mongodb://localhost:27017";
+	private $imgroot = "img/heroes/ui_targetportrait_hero_";
 	
 	//We autoload mongodb functions and set private variables
 	public function __construct(){
@@ -85,7 +86,7 @@ class Hots
 		//Echo table and tr with th.
 		echo '
 			<table>
-			<tr><th>Name</th><th>Role</th><th></th><tr>
+			<tr><th>#</th><th>Name</th><th>Role</th><th></th><tr>
 			';
 			//We find all documents in collection "Heroes"
 			$index = $this->collection->find();
@@ -93,7 +94,7 @@ class Hots
 			foreach($index as $document){
 				$name = $document["name"];
 				$role = $document["role"];
-				echo "<tr><td class='heroName'>$name</td><td>$role</td><td><img class='del' src='img/del.png'></td></tr>";
+				echo "<tr><td><img class='hero-portrait' src='$this->imgroot$name.jpg'></td><td class='heroName'>$name</td><td><img class='hero-role' src='img/role/$role.png' alt='Hero role: $role'></td><td><img class='del' src='img/del.png'></td></tr>";
 			}
 		echo '</table>';
 	}

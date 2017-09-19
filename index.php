@@ -49,13 +49,18 @@ if(isset($_POST['submit']))
 <div>
 	<form method="post" target="" autocomplete="off">
 		<input type="text" name="hname" maxlength="20" placeholder="Hero Name">
-		<input type="text" name="htype" maxlength="20" placeholder="Type of hero (warrior, assasin...)">
+		<select name="htype" placeholder="Role of hero">
+			<option>Assasin</option>
+			<option>Support</option>
+			<option>Specialist</option>
+			<option>Warrior</option>
+		</select>
 		<br>
 		<?php
 			//echo msg.
 			echo $msg;
 		 ?>
-		<input type="submit" name="submit" value="Go!">
+		<input type="submit" name="submit" value="Add">
 	</form>
 </div>
 <div class="hero-list">

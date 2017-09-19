@@ -31,7 +31,7 @@ form{
 	background: #3c3c3c;
 	border-radius: 4px;
 }
-form input{
+form input, select{
 	margin: 2px auto;
 	text-align: center;
 	display: block;
@@ -64,6 +64,7 @@ form input[type=submit]:hover, .del:hover{
 	background: #851ff5;
     padding: 15px;
     text-transform: uppercase;
+	text-align: left;
 }
 .hero-list table td{
 	padding:10px;
@@ -71,6 +72,15 @@ form input[type=submit]:hover, .del:hover{
 .hero-list table tr:nth-child(odd){
 	background:#2f2f2f;
 	
+}
+.hero-portrait{
+	border-radius: 90px;
+    width: 64px;
+    height: 64px;
+}
+.hero-role{
+	width: 55px;
+    height: 64px;
 }
 .sucess{
 	background: #16a935;
