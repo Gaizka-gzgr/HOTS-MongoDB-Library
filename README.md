@@ -1,6 +1,10 @@
 # HOTS MongoDB Library
 
-This is my first project using MongoDB+PHP Library, I choose Heroes of the Storm game for test and start working making database hero for it. I will use HTML5, CSS3 (SASS), PHP 7, jQuery 3.2.1 and MongoDB 3.x.
+This is my first project using MongoDB+PHP Library, I choose Heroes of the Storm game for test and start working making database hero for it. I'm using HTML5, CSS3 (SASS), PHP 7, jQuery 3.2.1 and MongoDB 3.x.
+
+You can add all heroes of the hots to the mongodb with automatic portraits, roles and abilities, also u can remove them from db.
+
+[Hero list](http://eu.battle.net/heroes/es/heroes/#/)
 
 ## Getting Started
 
@@ -30,6 +34,8 @@ What things you need to install the software and how to install them
 
 You need set up mongodb url in ```hots.class.php``` default is set for localhost. 
 
+You need add the heroes you want to db, u need his name and automatic add portrait & icons.
+
 ## Built With
 
 * [ATOM](https://atom.io/)
@@ -46,7 +52,7 @@ Please read [CONTRIBUTING.md](CODE_OF_CONDUCT.md) for details on our code of con
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Gaizka-gzgr/HOTS-MongoDB-Library--/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Gaizka-gzgr/HOTS-MongoDB-Library-/tags). 
 
 ## Authors
 
