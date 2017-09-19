@@ -56,6 +56,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+## Copyright
+
+All icons used in this project belongs to ©2017 BLIZZARD ENTERTAINMENT, INC. This is for test and educational surposes.
+
 ## Acknowledgments
 
 * In search of improvement
